@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+a {
+  color: gray;
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +23,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -23,4 +31,43 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+}
+
+.header ul,.footer ul {
+  display: flex;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+.right-links {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  background-color: lightgray;
 }
